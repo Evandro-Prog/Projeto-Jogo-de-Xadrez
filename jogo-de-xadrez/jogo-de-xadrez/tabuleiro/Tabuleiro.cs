@@ -51,7 +51,7 @@ namespace tabuleiro
             }
             Peca aux = peca(pos);
             aux.posicao = null; //Marca a posição da peça como nula
-            pecas[pos.linha, pos.coluna] = null; // Marca a posição do tabuleiro onde estava a peça comu nula
+            pecas[pos.linha, pos.coluna] = null; // Marca a posição do tabuleiro onde estava a peça como nula
             return aux; // Retorna a peça
         }
         
@@ -59,7 +59,7 @@ namespace tabuleiro
         public bool existePeca(Posicao pos)
         {
 
-            validarPosicao(pos); // Caso exista algum erro de validação de posição, o metodo (existe peça) e finalizado e é lançada a exceção de erro
+            validarPosicao(pos); // Caso exista algum erro de validação de posição, o metodo (existe peça) é finalizado e é lançada a exceção de erro
             return peca(pos) != null; //Caso seja "true", significa que existe uma peça naquela posição
         }
 
